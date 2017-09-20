@@ -5,7 +5,8 @@ import { Proposal } from './proposal';
 @Component({
   moduleId: module.id,
   selector: 'app-proposal-show',
-  templateUrl: 'proposal-show.component.html'
+  templateUrl: 'proposal-show.component.html',
+  styleUrls: ['proposal-show.component.css']
 })
 
 export class ProposalShowComponent implements OnInit {
@@ -20,7 +21,7 @@ export class ProposalShowComponent implements OnInit {
       // subscribe gives us access to the object we want to communicate with
       params => {
         this.id = +params['id'];
-        // + converts it into a number 
+        // + converts it into a number
       }
     )
   }
